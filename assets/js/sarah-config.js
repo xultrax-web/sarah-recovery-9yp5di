@@ -38,9 +38,9 @@ window.SARAH_CONFIG = /*CONFIG-START*/{
   "oaklandOffice": "2923 Webster Street, #202, Oakland, CA 94609 (listed in a 2018 practice news post)",
   "surgeonPhone": "(925) 275-0700 (main office line)",
   "afterHoursPhone": "",
-  "hospital": "",
-  "hospitalAddress": "",
-  "hospitalPhone": "",
+  "hospital": "Fremont Surgery Center (outpatient surgery center)",
+  "hospitalAddress": "39350 Civic Center Drive, Suite 100, Fremont, CA 94538",
+  "hospitalPhone": "(510) 456-4600",
   "firstPostOpVisit": "",
   "notes": ""
 }/*CONFIG-END*/;
