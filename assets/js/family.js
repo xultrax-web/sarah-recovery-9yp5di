@@ -46,7 +46,11 @@
         '<time datetime="' + esc(u.date) + '">' + DOWL[d.getDay()] + ", " + MON[d.getMonth()] + " " + d.getDate() + (u.time ? " · " + esc(u.time) : "") + '</time>' +
         '<span class="post-day">' + dayLabel(d) + '</span></header><h2>' + esc(u.title) + '</h2>' +
         (u.photo ? '<img class="post-photo" src="' + esc(u.photo) + '" alt="' + esc(u.photoAlt || "Photo for this update") + '" loading="lazy">' : "") +
-        '<p>' + esc(u.text).replace(/\n/g, "<br>") + '</p></article>';
+        (u.photos && u.photos.length ? '<div class="post-photos">' + u.photos.map(function (p) {
+          return '<figure class="post-fig"><img src="' + esc(p.src) + '" alt="' + esc(p.alt || "Photo for this update") + '" loading="lazy">' +
+            (p.caption ? '<figcaption>' + esc(p.caption) + '</figcaption>' : "") + '</figure>';
+        }).join("") + '</div>' : "") +
+        (u.text ? '<p>' + esc(u.text).replace(/\n/g, "<br>") + '</p>' : "") + '</article>';
     }).join("") : '<p>No updates yet. Check back soon.</p>';
   }
   function to24(t) { var m = /(\d{1,2}):(\d{2})\s*([AaPp])?/.exec(t || ""); if (!m) return "00:00"; var h = +m[1] % 12; if (m[3] && /p/i.test(m[3])) h += 12; if (!m[3]) h = +m[1]; return (h < 10 ? "0" : "") + h + ":" + m[2]; }

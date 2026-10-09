@@ -396,6 +396,10 @@ table.log td.d{white-space:nowrap;font-weight:650;width:6.5rem}
 .update-post p{margin:.3rem 0}
 .post-day{font-weight:650;color:var(--brand-2)}
 .post-photo{display:block;width:100%;height:auto;border-radius:10px;margin:.5rem 0}
+.post-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.8rem;margin:.6rem 0}
+.post-fig{margin:0}
+.post-fig img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:#f1f5f9}
+.post-fig figcaption{margin-top:.35rem}
 .filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
 .filters .btn[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
 .slot-day{margin:1rem 0}.slot-day h3{font-size:1.05rem;margin:.2rem 0 .4rem;position:sticky;top:3.4rem;background:var(--bg);padding:.25rem 0;z-index:2}

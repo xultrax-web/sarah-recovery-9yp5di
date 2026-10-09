@@ -16,6 +16,11 @@
    - type: meal | ride | visit | errand
    ===================================================================== */
 window.FAMILY_UPDATES = [
+  { "date": "2026-10-09", "time": "", "status": "update", "title": "Surgery day and home again", "text": "", "photo": "", "photoAlt": "", "photos": [
+    { "src": "photos/2026-10-09-pre-op.jpg", "caption": "Before surgery, with the surgeon's markings", "alt": "Sarah in a hospital gown and surgical cap, with two marker lines drawn across the front of her neck" },
+    { "src": "photos/2026-10-09-post-op.jpg", "caption": "After surgery", "alt": "Close-up of the front of Sarah's neck after surgery, showing the incision line, wearing a gray T-shirt" },
+    { "src": "photos/2026-10-09-resting.jpg", "caption": "Resting at home", "alt": "Sarah lying on a bed at home, smiling and giving two thumbs up" }
+  ] },
   { "date": "2026-10-02", "time": "", "status": "update", "title": "Surgery is Thursday, Oct 8", "text": "Thank you for all the love. Sarah's disc replacement surgery is on Thursday, October 8. We'll post a short update here after surgery and each day after that. The best way to help right now is to sign up for a meal, ride or short visit on the Meals & Visits page.", "photo": "", "photoAlt": "" }
 ];
 
